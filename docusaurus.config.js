@@ -27,7 +27,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: '/',
+          routeBasePath: '/docs/',
           editUrl: 'https://github.com/PumpFun-Screener/docs/edit/main/',
         },
         blog: false, // 🔴 Disable the blog completely
