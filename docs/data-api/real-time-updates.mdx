@@ -43,7 +43,8 @@ import WebSocket from 'ws';
 const ws = new WebSocket('wss://pumpfunscreener.com/api/data');
 
 ws.on('open', () => {
-  ws.send(JSON.stringify({ method: 'subscribeTokenAggregation' }));
+  console.log('Connected to WebSocket server');
+  ws.send(JSON.stringify({ action: 'subscribe', topic: 'subscribeTokenAggregation' }));
 });
 
 ws.on('message', (data) => {
@@ -65,7 +66,7 @@ import json
 async def main():
     uri = "wss://pumpfunscreener.com/api/data"
     async with websockets.connect(uri) as websocket:
-        await websocket.send(json.dumps({"method": "subscribeTokenAggregation"}))
+        await websocket.send(json.dumps({"action": "subscribe", "topic": "subscribeTokenAggregation"}))
 
         async for message in websocket:
             data = json.loads(message)
