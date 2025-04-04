@@ -7,7 +7,7 @@ const config = {
   favicon: 'img/favicon.ico',
 
   url: 'https://pumpfun-screener.github.io',
-  baseUrl: '/',
+  baseUrl: '/docs/',
   organizationName: 'PumpFun-Screener',
   projectName: 'docs',
   deploymentBranch: 'gh-pages',
