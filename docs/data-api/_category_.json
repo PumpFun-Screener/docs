@@ -1,8 +1,0 @@
-{
-  "label": "Data API",
-  "position": 2,
-  "link": {
-    "type": "generated-index",
-    "description": "Examples of Websocket connections."
-  }
-}
