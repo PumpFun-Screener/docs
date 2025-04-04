@@ -19,7 +19,6 @@ const config = {
     defaultLocale: 'en',
     locales: ['en'],
   },
-
   presets: [
     [
       'classic',
@@ -27,7 +26,7 @@ const config = {
       ({
         docs: {
           sidebarPath: './sidebars.js',
-          routeBasePath: '/docs/',
+          routeBasePath: '/',
           editUrl: 'https://github.com/PumpFun-Screener/docs/edit/main/',
         },
         blog: false, // 🔴 Disable the blog completely
